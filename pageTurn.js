@@ -1,14 +1,15 @@
 $(document).on(
 "pageinit", function() {
-	var cPage=$("#main").find(img);
+	
+	var cpage=$("#main").find("img");
 	
 	//page right
-			   $(cPage).on("swiperight",function(){
-				   $("#main").hide();});/*onswiperight*/
+			   $("#main").on("swiperight",function(){
+				   $(cpage).hide();});/*onswiperight*/
 	//page left			  
 				   
-				 $(cPage).on("swipeleft",function(){
-				   $("#main").hide();});  
+				 $("#main").on("swipeleft",function(){
+				   $(cpage).hide();}); /*onswipeleft*/ 
 				   
 				   }/*onpagefun*/			   
 				   );/*onpage*/
